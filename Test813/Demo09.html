@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三种显示模式的转换</title>
+</head>
+<style>
+    sapn{
+        /*把行内元素转换成块级元素*/
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: deeppink;
+    }
+
+    div{
+        /*把块级元素转换成行内元素*/
+        display: inline;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+
+    a{
+        /*把行内元素转换成行内块元素*/
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+
+</style>
+<body>
+<sapn>行内Inline</sapn>
+<sapn>行内Inline</sapn>
+<div>div 是块级元素 block</div>
+<div>div 是块级元素 block</div>
+<a href="">百度</a>
+
+</body>
+</html>

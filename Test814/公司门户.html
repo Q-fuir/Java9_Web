@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .banner{
+            width: 760px;
+            height: 150px;
+            margin: auto;
+        }
+      .nav{
+        width: 760px;
+        height: 150px;
+        margin: auto;
+          background: url("../imgs/nav_bg.jpg") repeat-x ;
+
+    }
+
+
+        .nav li{
+            float: left;
+            padding-left:-1px ;
+        }
+
+        .nav li a{
+            display: inline-block;
+            text-decoration: none;
+            background: url("../imgs/button1.jpg") no-repeat;
+            padding: 8px;
+            color: black;
+            height: 32px;
+        }
+
+        .nav li a:hover{
+            background: url("../imgs/button2.jpg") no-repeat;
+        }
+    </style>
+</head>
+<body>
+<!-- banner 是广告条的 -->
+<div class="banner">
+    <img src="../imgs/banner.jpg" alt="">
+</div>
+<!-- nav 导航栏部分  -->
+<!-- 以后我们重要的导航栏，都要采取 li 包含a 的写法 -->
+<div class="nav">
+    <ul>
+        <li><a href="#">网站首页</a></li>
+        <li><a href="#">网站首页</a></li>
+        <li><a href="#">网站首页</a></li>
+        <li><a href="#">网站首页</a></li>
+        <li><a href="#">网站首页</a></li>
+        <li><a href="#">网站首页</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
