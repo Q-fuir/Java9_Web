@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>鲁班七号1</li>
+    <li>鲁班七号2</li>
+    <li>鲁班七号3</li>
+    <li>鲁班七号4</li>
+    <li>鲁班七号5</li>
+    <li>鲁班七号6</li>
+    <li>鲁班七号7</li>
+</ul>
+<ol id="ol">
+    <li>JavaScript1</li>
+    <li>JavaScript2</li>
+    <li>JavaScript3</li>
+    <li>JavaScript4</li>
+    <li>JavaScript5</li>
+    <li>JavaScript6</li>
+    <li>JavaScript7</li>
+</ol>
+
+<script>
+    //返回的是获取过来元素对象的集合
+  var lis=  document.getElementsByTagName('li');
+  console.log(lis);
+  //遍历
+  for (var i = 0; i <li.length ; i++) {
+      console.log(lis[i]);
+  }
+
+  //父元素必须是指定的单个元素
+  var ol=  document.getElementById('ol');
+  console.log(ol.getElementsByTagName('li'));
+
+</script>
+</body>
+</html>

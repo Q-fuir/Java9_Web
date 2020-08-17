@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*转换字符型方式*/
+        var num=10000;
+        /*方式一*/
+        var str =num.toString();
+        console.log(typeof str);
+
+        /*方式二*/
+        console.log(typeof String(num));
+
+        /*方式三*/
+        str=num+'';
+        console.log(typeof str);
+
+
+        /**
+         * 转换为数字型
+         */
+        var num ='3.14';
+        var res=parseInt(num);
+        console.log(res);
+        console.log(typeof res);
+
+
+        console.log(parseInt('120px'));//120
+        console.log(parseInt('num120px'));//NaN
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
