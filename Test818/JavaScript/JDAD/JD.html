@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div{
+            position: relative;
+            width: 1190px;
+            height: 80px;
+            margin: 0 auto;
+            background: url("img/luzhou.jpg") no-repeat ;
+        }
+
+        i{
+            position: absolute;
+            right:0;
+            top: 0;
+            width: 18px;
+            height: 20px;
+            background: url("img/close.jpg") no-repeat ;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <i></i>
+</div>
+<script>
+    var i =document.querySelector('i');
+    var div =document.querySelector('div');
+    i.onclick = function () {
+        div.style.display='none';
+    }
+</script>
+</body>
+</html>

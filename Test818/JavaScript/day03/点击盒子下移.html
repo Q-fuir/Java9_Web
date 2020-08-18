@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .change{
+            background-color: blue;
+            color: #fff;
+            font-size:25px;
+            margin-top: 100px;
+        }
+
+        .first{
+
+        }
+    </style>
+</head>
+<body>
+<div class="first">文本</div>
+<script>
+    var text=document.querySelector('div');
+    text.onclick=function () {
+        // this.style.backgroundColor='blue';
+        // this.style.marginTop='100px';
+        // this.style.fontSize='50px';
+        // this.style.fontFamily='微软雅黑';
+        // this.style.color='white';
+        this.className='first change';
+
+    }
+</script>
+</body>
+</html>
