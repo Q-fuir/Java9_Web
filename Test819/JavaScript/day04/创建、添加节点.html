@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>1234</li>
+</ul>
+<script>
+    //创建节点值元素节点
+   var li= document.createElement('li');
+   //添加节点 node.appendChild(Child)  node 父级 Child是子集 ，append 后面追加
+   var ul=  document.querySelector('ul');
+   ul.appendChild(li);
+
+   //添加节点
+    //node.insertBefore(Child，指定元素)
+    var lii=document.createElement('li');
+    ul.insertBefore(lii,ul.children[0]);
+</script>
+</body>
+</html>
