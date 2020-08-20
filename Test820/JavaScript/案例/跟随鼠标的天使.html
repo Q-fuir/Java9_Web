@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+            position: absolute;
+            top: 2px;
+        }
+
+        body{
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+<img src="img/angel.gif" alt="">
+<script>
+   var img= document.querySelector('img');
+   document.addEventListener('mousemove',function (e) {
+       // console.log(1)
+       var x=e.pageX;
+       var y=e.pageY;
+       console.log('x的坐标是：'+x+'y的坐标是：'+y);
+       img.style.left=x -40 +'px';
+       img.style.top=y -30 +'px';
+   })
+</script>
+</body>
+</html>
