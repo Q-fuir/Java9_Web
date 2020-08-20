@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    function fn() {
+        var d1=+new Date();//+号相当于将时间对象做了隐式转换
+
+        // var str=[];
+        for (var i = 0; i <1000 ; i++) {
+            // document.body.innerHTML+='<div style="width: 100px; height: 2px;border: 1px solid blue"></div>';//inner字符串拼接
+            // str.push('<div style="width: 100px; height: 2px;border: 1px solid blue"></div>');//inner数组
+
+            //
+            var div = document.createElement('div');
+            div.style.width='100px';
+            div.style.height='2px';
+            div.style.border='1px solid blue';
+            document.body.appendChild(div);
+        }
+        // document.body.innerHTML=str.join('');
+        var d2=+new Date();
+        console.log(d2-d1);
+    }
+
+    fn();
+
+</script>
+</body>
+</html>

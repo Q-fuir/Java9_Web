@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>传统注册事件</button>
+<button>方法监听注册事件</button>
+
+<script>
+    var btns = document.querySelectorAll('button');
+
+    //传统 唯一性
+    btns[0].onclick=function () {
+        alert("hahhah ");
+    }
+
+    btns[0].onclick=function () {
+        alert("呵呵呵呵 ");
+    }
+
+    //方法监听
+    btns[1].addEventListener('click',function () {
+        alert('ahhhhha');
+    });
+
+    btns[1].addEventListener('click',function () {
+        alert('ahheeee');
+    });
+</script>
+</body>
+</html>
